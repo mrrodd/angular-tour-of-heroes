@@ -10,6 +10,8 @@ var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms"); // <-- ngModel lives here
 var app_component_1 = require("./app.component");
 var hero_detail_component_1 = require("./hero-detail.component");
+var heroes_component_1 = require("./heroes.component");
+var hero_service_1 = require("./hero.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,8 +26,10 @@ AppModule = __decorate([
         // every component must be declared in one, and only one, Angular module.
         declarations: [
             app_component_1.AppComponent,
-            hero_detail_component_1.HeroDetailComponent
+            hero_detail_component_1.HeroDetailComponent,
+            heroes_component_1.HeroesComponent
         ],
+        providers: [hero_service_1.HeroService],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
