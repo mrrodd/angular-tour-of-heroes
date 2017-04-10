@@ -1,5 +1,9 @@
 // Place your settings in this file to overwrite default and user settings.
 {
+    "files.exclude": {
+        "**/app/**/*.js": true,
+        "**/*.map": true
+    },
     "editor.tabSize": 4,
     "editor.insertSpaces": true
 }
